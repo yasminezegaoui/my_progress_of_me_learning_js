@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/page1.css">
+    <title>My Website</title>
+</head>
+<body>
+    <!-- made a button that change a span style when clicked on-->
+    <h1 id="h1">My name is <span id="span">yasmine</span></h1>
+    <button id="button1" onclick="changeStyle()">click me</button>
+    <br><br>
+    <!-- simple form to get user input -->
+    <form id="form">
+        <h2>My First Form</h2>
+        <label for="username">username:</label>
+        <input type="text" name="username" id="username">
+        <br><br>
+        <label for="email">email:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+        <label for="password">username:</label>
+        <input type="password" name="password" id="password">
+        <br><br>
+        <button type="submit" id="submit" onclick="getUserInput(event)">Submit</button>
+    </form>
+    <br><br>
+    <!-- simple table to store the user input that i got from the form-->
+    <table id="userTable" border="1">
+        <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>password</th>
+        </tr>
+    </table>
+    <script src="../javascript/day1/page1.js"></script>
+</body>
+</html>
